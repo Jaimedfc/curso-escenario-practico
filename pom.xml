@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>es.capgemini.curso</groupId>
+	<artifactId>practical-exercise</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- Propiedades personalizadas -->
+		<junit.version>4.11</junit.version>
+		<spring.version>5.1.0.RELEASE</spring.version>
+	</properties>
+
+	<dependencies>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<!-- Compilador Maven -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<!-- Java 11 -->
+					<release>11</release>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<modules>
+		<module>persistence-layer</module>
+		<module>business-layer</module>
+		<module>frontend-layer</module>
+		<module>services-layer</module>
+	</modules>
+</project>
